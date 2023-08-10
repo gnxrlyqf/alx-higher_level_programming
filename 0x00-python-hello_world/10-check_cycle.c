@@ -3,29 +3,6 @@
 #include <stdio.h>
 
 /**
- * exist_in_list - checks if an element exists in a linked list
- * @pointer: pointer to the next element in the list
- * @arr: array to check
- * @size: size of the array
- *
- * Return: 1 (exists), 0 (doesn't exist)
-*/
-
-int	exist_in_list(listint_t *pointer, int size, listint_t **arr)
-{
-	int	i;
-
-	i = 0;
-	while (i < size)
-	{
-		if (pointer == arr[i])
-			return (1);
-		i++;
-	}
-	return (0);
-}
-
-/**
  * check_cycle - checks a linked list for a cycle
  * @list: head node of the linked list to check
  *
