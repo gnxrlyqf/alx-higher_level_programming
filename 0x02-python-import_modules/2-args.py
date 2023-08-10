@@ -5,5 +5,5 @@ if __name__ == "__main__":
     args = "arguments" if len(sys.argv) != 1 else "argument"
     end = "." if len(sys.argv) == 0 else ":"
     print("{} {}{}".format(len(sys.argv), args, end))
-    for i in range (len(sys.argv)):
+    for i in range(len(sys.argv)):
         print("{}: {}".format(i + 1, sys.argv[i]))
