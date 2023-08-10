@@ -44,7 +44,7 @@ int check_cycle(listint_t *list)
 	arr[0] = list;
 	while (list_item->next)
 	{
-		if (exist_in_list(list_item->next, size, arr))
+		if (list_item->next == list)
 			return (1);
 		arr = (listint_t **)realloc(arr,(++size) * sizeof(listint_t *));
 		arr[size - 1] = list_item->next;
