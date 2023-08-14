@@ -1,0 +1,5 @@
+#!/usr/bun/python3
+def multiple_returns(sentence):
+    if sentence is None:
+        0, None
+    return len(sentence), sentence[0]
