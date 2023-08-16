@@ -11,6 +11,7 @@ def roman_to_int(roman_string):
             sum -= getvalue(roman_string[i])
     return sum
 
+
 def getvalue(c):
     if c is None:
         return 0
