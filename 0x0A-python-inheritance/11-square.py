@@ -18,10 +18,10 @@ class Square(Rectangle):
 
     def area(self):
         """area of square"""
-        return self.__width * self.__height
+        return self.__size * self.__size 
 
     def __str__(self):
         """represent square as str"""
         string = "[" + str(self.__class__.__name__) + "] "
-        string += str(self.__width) + "/" + str(self.__height)
+        string += str(self.__size) + "/" + str(self.__size)
         return string
