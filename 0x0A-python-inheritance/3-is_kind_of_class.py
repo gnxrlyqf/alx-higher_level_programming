@@ -2,7 +2,7 @@
 """checks an inherited class if it's an instance of an object"""
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """check if object is an instance of inherited class
 
     Args:
