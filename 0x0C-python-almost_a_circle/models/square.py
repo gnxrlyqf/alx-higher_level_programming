@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """define new square class"""
-from models.base import Base
+from models.rectangle import Rectangle
 
 
-class Square(Base):
+class Square(Rectangle):
     """represent rsquare"""
     def update(self, *args, **kwargs):
         """update square
