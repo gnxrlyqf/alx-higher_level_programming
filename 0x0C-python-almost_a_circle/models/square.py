@@ -59,18 +59,13 @@ class Square(Rectangle):
             size (int): square size
             x (int): square x offset
             y (int): square y offset
-            id (int): rectangle id
-        Raises:
-            TypeError: size is not int
-            ValueError: negative or null size
-            TypeError: x or y offstes are not ints
-            ValueError: negative or null x and y offsets
+            id (int): square id
         """
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """represent square as string"""
-        return "[Rectangle] ({}) {}/{} - {}".format(self.id,
+        return "[Square] ({}) {}/{} - {}".format(self.id,
                                                     self.x, self.y, self.width)
 
     def to_dictionary(self):
