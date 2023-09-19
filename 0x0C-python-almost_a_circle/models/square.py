@@ -48,7 +48,7 @@ class Square(Rectangle):
         return self.width
 
     @size.setter
-    def width(self, value):
+    def size(self, value):
         self.width = value
         self.height = value
 
@@ -57,8 +57,8 @@ class Square(Rectangle):
 
         Args:
             size (int): square size
-            x (int): rectangle x offset
-            y (int): rectangle y offset
+            x (int): square x offset
+            y (int): square y offset
             id (int): rectangle id
         Raises:
             TypeError: size is not int
