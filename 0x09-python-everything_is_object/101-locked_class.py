@@ -4,7 +4,7 @@
 
 class LockedClass:
     """
-	prevents instantiation of new instances by user
+    prevents instantiation of new instances by user
 
     Attributes:
         first_name (str): first name
