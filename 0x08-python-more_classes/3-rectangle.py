@@ -50,3 +50,16 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return self.height * 2 + self.width * 2
+
+    def __str__(self):
+        """prints rectangles using #"""
+        if self.width == 0 or self.height == 0:
+            return ("")
+
+        arr = []
+        for i in range(self.height):
+            for j in range(self.width):
+                arr.append('#')
+            if i != self.height - 1:
+                arr.append("\n")
+        return ("".join(arr))
