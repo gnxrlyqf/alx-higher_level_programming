@@ -63,8 +63,7 @@ class Rectangle:
             if i != self.height - 1:
                 arr.append("\n")
         return ("".join(arr))
-    
+
     def __repr__(self):
         """represent rectangle as string"""
-        rect = "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
-        return (rect)
+        return ("Rectangle(" + str(self.width) + ", " + str(self.height) + ")")
