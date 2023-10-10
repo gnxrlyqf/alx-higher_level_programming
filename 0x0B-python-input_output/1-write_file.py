@@ -4,6 +4,7 @@
 
 def read_file(filename="", text=""):
     """read and print a file
+
     Args:
         filename (str): file to write to
         text (str): text to write
