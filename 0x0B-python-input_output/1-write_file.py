@@ -2,8 +2,8 @@
 """file writing function"""
 
 
-def read_file(filename="", text=""):
-    """read and print a file
+def write_file(filename="", text=""):
+    """write to a file
 
     Args:
         filename (str): file to write to
