@@ -3,9 +3,6 @@
 
 
 def read_file(filename=""):
-    """read a file
-    Args:
-        filename (str): file name to read
-    """
-    with open(filename) as f
-    print(f.readlines())
+    """read and print a file"""
+    with open(filename, encoding = "utf-8") as file:
+        print(file.readlines())
