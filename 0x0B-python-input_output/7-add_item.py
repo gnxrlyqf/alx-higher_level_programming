@@ -11,4 +11,4 @@ if __name__ == "__main__":
     except FileNotFoundError:
         arr = []
     arr.extend(sys.argv[1:])
-    save_to_json_file(arr, "add_item.json")
+    save(arr, "add_item.json")
