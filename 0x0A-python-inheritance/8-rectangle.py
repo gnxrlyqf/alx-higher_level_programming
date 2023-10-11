@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """rectangle class inheriting from basegeometry"""
-parent = __import__('7-base_geometry').parent
+parent = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(parent):
