@@ -2,7 +2,7 @@
 """class checking function"""
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """check of obj is instance of a_class
 
     Args:
@@ -14,4 +14,5 @@ def is_same_class(obj, a_class):
     """
     if isinstance(obj, a_class):
         return True
-    return False
+    else:
+        return False
