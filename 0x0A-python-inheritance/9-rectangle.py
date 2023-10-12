@@ -24,4 +24,4 @@ class Rectangle(parent):
 
     def __str__(self):
         """Return the print() and str() representation of a Rectangle."""
-        return "[Rectangle]" + self.__width + "/" + self.__height
+        return "[Rectangle]" + str(self.__width) + "/" + str(self.__height)
