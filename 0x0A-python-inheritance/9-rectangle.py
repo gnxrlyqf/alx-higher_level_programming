@@ -20,8 +20,8 @@ class Rectangle(parent):
 
     def area(self):
         """return rectangle area"""
-        return self.width * self.height
+        return self.__width * self.__height
 
     def __str__(self):
         """Return the print() and str() representation of a Rectangle."""
-        return "[Rectangle]" + str(self.__width) + "/" + str(self.__height)
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
