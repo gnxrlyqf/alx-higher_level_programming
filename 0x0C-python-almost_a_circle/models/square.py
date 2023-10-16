@@ -30,17 +30,8 @@ class Square(Rectangle):
 
     def __str__(self):
         """represent square as string"""
-        return "[Square] ({}) {}/{} - {}".format(self.id,
-                                                 self.x, self.y, self.width)
-
-    def to_dictionary(self):
-        """represent square as dictionary"""
-        return {
-            "id": self.id,
-            "size": self.width,
-            "x": self.x,
-            "y": self.y
-        }
+        return "[Square] ({}) {}/{} - {}".format(
+            self.id, self.__x, self.__y, self.__size)
 
     def update(self, *args, **kwargs):
         """update square
