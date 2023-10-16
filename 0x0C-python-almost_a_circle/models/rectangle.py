@@ -83,10 +83,13 @@ class Rectangle(Base):
 
     def display(self):
         """display rectangle"""
-        for i in range(self.__x):
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
+        for i in range(self.__y):
             print()
         for i in range(self.__height):
-            for j in range(self.__y):
+            for j in range(self.__x):
                 print(end=" ")
             for j in range(self.__width):
                 print("#", end="")
