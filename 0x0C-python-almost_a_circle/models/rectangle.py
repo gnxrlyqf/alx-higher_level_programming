@@ -24,7 +24,7 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
         super().__init__(id)
-    
+
     @property
     def width(self):
         """setter/getter for rectangle width"""
@@ -93,7 +93,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """return Rectangle str representation"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format( \
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
