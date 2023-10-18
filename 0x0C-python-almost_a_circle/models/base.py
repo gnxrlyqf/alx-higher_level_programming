@@ -33,9 +33,9 @@ class Base:
     def save_to_file(cls, list_objs):
         """write list of instances to json file"""
         filename = cls.__name__ + ".json"
-        with open(filename, "w") as jsonfile:
+        with open(filename, "w") as file:
             if list_objs is None:
-                jsonfile.write("[]")
+                file.write("[]")
             else:
-                list_dicts = [o.to_dictionary() for o in list_objs]
-                jsonfile.write(Base.to_json_string(list_dicts))
+                list = [dict.to_dictionary() for dict in list_objs]
+                file.write(Base.to_json_string(list))
