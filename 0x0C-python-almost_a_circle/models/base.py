@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """define base class"""
 import json
+import csv
 
 
 class Base:
@@ -41,3 +42,19 @@ class Base:
             else:
                 list = [dict.to_dictionary() for dict in list_objs]
                 file.write(Base.to_json_string(list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or json_string == "[]":
+            return []
+        return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        if dictionary and dictionary != {}:
+            if cls.__name__ == "Rectangle":
+                new = cls(1, 1)
+            else:
+                new = cls(1)
+            new.update(**dictionary)
+            return new
