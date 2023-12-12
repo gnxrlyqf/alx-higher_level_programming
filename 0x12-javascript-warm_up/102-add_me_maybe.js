@@ -1,5 +1,5 @@
 #!/usr/bin/node
-function add_me(number, theFunction) {
+function addMe (number, theFunction) {
   theFunction(++number);
-};
-exports.addMeMaybe = add_me;
+}
+exports.addMeMaybe = addMe;
