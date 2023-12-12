@@ -1,13 +1,13 @@
 #!/usr/bin/node
-const Rectangle = require('./4-rectangle');
+const baseSquare = require('./5-square');
 
-class Square extends Rectangle {
+class Square extends baseSquare{
   charPrint (c) {
     if (c === undefined) {
-      c = 'X'
+      c = 'X';
     }
-      for (let i = 0; i < this.height; i++) {
-        console.log(c.repeat(this.width));
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width));
     }
   }
 }
