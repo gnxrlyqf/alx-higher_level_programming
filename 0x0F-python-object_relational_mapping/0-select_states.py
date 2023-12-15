@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Prints data in a database"""
 import sys
 import MySQLdb
 
