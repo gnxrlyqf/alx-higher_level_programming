@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Prints data that starts with N in a database"""
+"""Prints Arizona in a database"""
 import sys
 import MySQLdb
 
