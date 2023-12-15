@@ -12,7 +12,7 @@ if __name__ == "__main__":
         port=3306
     )
     cursor = db.cursor()
-    cursor._query("SELECT * FROM states WHERE name LIKE 'N%'")
+    cursor._query("SELECT * FROM states WHERE name LIKE BINARY 'N%'")
     data = cursor.fetchall()
     for row in data:
         print(row)
