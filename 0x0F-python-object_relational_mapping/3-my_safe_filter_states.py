@@ -13,7 +13,7 @@ if __name__ == "__main__":
     )
     cursor = db.cursor()
     input = sys.argv[4]
-    cursor._query("SELECT * FROM states WHERE name LIKE BINARY %s", (input, ))
+    cursor._query("SELECT * FROM states WHERE name LIKE %s", (input, ))
     data = cursor.fetchall()
     for row in data:
         print(row)
