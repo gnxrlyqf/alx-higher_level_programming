@@ -12,8 +12,8 @@ if __name__ == "__main__":
         port=3306
     )
     cursor = db.cursor()
-    q_p1 = "SELECT * FROM states WHERE name LIKE '"
-    cursor._query(q_p1 + sys.argv[4] + "%'")
+    cursor._query("SELECT * FROM states WHERE name LIKE '{}%'".format(
+        sys.argv[4]))
     data = cursor.fetchall()
     for row in data:
         print(row)
