@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Prints all data in database"""
+"""Prints first row in database"""
 from model_state import State, Base
 import sys
 from sqlalchemy import create_engine
@@ -14,7 +14,8 @@ if __name__ == "__main__":
     ))
     Session = sessionmaker(bind=engine)
     session = Session()
-    out = session.query(State).all()
-    for state in out:
-        print(state.id, state.name, sep=": ")
+    new = State(name="Louisiana")
+    session.add(new)
+    session.commit()
+    print(new.id)
     session.close()
