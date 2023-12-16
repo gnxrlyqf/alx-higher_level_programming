@@ -12,9 +12,8 @@ if __name__ == "__main__":
         port=3306
     )
     curso = db.curso()
-    input = sys.argv[4]
     curso._query("SELECT * FROM states WHERE name = %s ORDER BY states.id ASC",
-                 input)
+                 [sys.argv[4]])
     data = curso.fetchall()
     for row in data:
         print(row)
