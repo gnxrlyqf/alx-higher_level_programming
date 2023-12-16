@@ -17,3 +17,4 @@ if __name__ == "__main__":
     out = session.query(State).filter(State.name.like("%a%"))
     for state in out:
         print(state.id, state.name, sep=": ")
+    session.close()

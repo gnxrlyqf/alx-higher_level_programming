@@ -19,3 +19,4 @@ if __name__ == "__main__":
         print(out.id, out.name, sep=": ")
     else:
         print("Nothing")
+    session.close()
