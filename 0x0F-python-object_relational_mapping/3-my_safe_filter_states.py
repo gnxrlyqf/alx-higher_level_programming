@@ -13,7 +13,7 @@ if __name__ == "__main__":
     )
     curso = db.curso()
     curso._query("SELECT * FROM states WHERE name = %s ORDER BY states.id ASC",
-                 [sys.argv[4]])
+                 (sys.argv[4], )
     data = curso.fetchall()
     for row in data:
         print(row)
