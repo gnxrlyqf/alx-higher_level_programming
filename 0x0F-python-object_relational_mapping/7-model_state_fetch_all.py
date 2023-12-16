@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Prints all data in database"""
 from model_state import State, Base
 import sys
 from sqlalchemy import create_engine
