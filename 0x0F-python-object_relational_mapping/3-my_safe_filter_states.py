@@ -11,11 +11,11 @@ if __name__ == "__main__":
         database=sys.argv[3],
         port=3306
     )
-    curso = db.curso()
-    curso._query("SELECT * FROM states WHERE name = %s ORDER BY states.id ASC",
+    curs = db.cursor()
+    curs.execute("SELECT * FROM states WHERE name = %s ORDER BY states.id ASC",
                  (sys.argv[4], ))
-    data = curso.fetchall()
+    data = curs.fetchall()
     for row in data:
         print(row)
-    curso.close()
+    curs.close()
     db.close()
