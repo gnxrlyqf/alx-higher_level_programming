@@ -17,8 +17,7 @@ if __name__ == "__main__":
     session = Session()
 
     for obj in session.query(State):
-        print(obj.id, obj.name, sep=": ")
         for city in obj.cities:
-            print(end="\t")
-            print(city.id, city.name, sep=": ")
+            print(city.id, city.name, sep=": ", end="")
+            print(" -> " + obj.name)
     session.close()
