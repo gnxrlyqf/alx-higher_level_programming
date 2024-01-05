@@ -1,3 +1,3 @@
 #!/bin/bash
 #get the response of code 200
-curl -sX POST -d "email: test@gmail.com" -d "subject: I will always be here for PLD" "$1" -L
+curl -sX GET -H "X-School-User-Id: 98" "$1" -L
