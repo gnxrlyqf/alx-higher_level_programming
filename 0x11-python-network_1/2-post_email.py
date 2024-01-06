@@ -8,5 +8,5 @@ if __name__ == "__main__":
     data = data.encode("ascii")
     req = request.urlopen(sys.argv[1], data=data)
     with request.urlopen(request) as response:
-        out = response.read().decode("utf-8")
+        out = response.decode("utf-8")
         print(out)
