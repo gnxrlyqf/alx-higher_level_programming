@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """fetches data from url"""
-
 from urllib import request
 if __name__ == "__main__":
     with request.urlopen("https://alx-intranet.hbtn.io/status") as page:
