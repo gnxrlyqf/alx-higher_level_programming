@@ -4,9 +4,9 @@ from sys import argv
 from requests import post, get
 if __name__ == "__main__":
     if len(argv) == 1:
-        v = argv[1]
-    else:
         v = ""
+    else:
+        v = argv[1]
     data = {"q": v}
     with post("http://0.0.0.0:5000/search_user", data=data) as page:
         try:
