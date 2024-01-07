@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""fetches webpage using requests"""
 import requests
 if __name__ == "__main__":
     with requests.get("https://alx-intranet.hbtn.io/status") as page:
