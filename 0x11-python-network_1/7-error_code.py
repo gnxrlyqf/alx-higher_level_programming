@@ -7,4 +7,4 @@ if __name__ == "__main__":
             if page.status_code >= 400:
                 print("Error code: {}".format(page.status_code))
             else:
-                print(page.content)
+                print(page.content.decode("utf-8"))
