@@ -10,6 +10,6 @@ if __name__ == "__main__":
             if not out:
                 print("No result")
             else:
-                print("[{}] {}".format(page.get("id"), page.get("name")))
+                print("[{}] {}".format(out.get("id"), out.get("name")))
         except ValueError:
             print("Not a valid JSON")
