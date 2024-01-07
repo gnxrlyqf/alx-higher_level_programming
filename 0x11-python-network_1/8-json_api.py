@@ -3,7 +3,7 @@
 from sys import argv
 from requests import post, get
 if __name__ == "__main__":
-    if argv[1]:
+    if len(argv) == 1:
         v = argv[1]
     else:
         v = ""
