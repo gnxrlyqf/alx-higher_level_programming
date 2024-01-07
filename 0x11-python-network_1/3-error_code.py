@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""prints http error code"""
 from urllib import request, error
 import sys
 if __name__ == "__main__":
